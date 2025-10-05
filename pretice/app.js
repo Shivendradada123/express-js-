@@ -1,38 +1,59 @@
 // const express = require('express');
+// const app = express();
 
-// const bodyparser = require('body-parser');
+// app.get('/user', (req, res) => {
+//     console.log(req.url, req.method);
+//     res.send(`
+//         <h1>Hey I am User Page</h1>
+//         <a href="/">Go back to Home</a>
+//     `);
+// });
+
+// app.get('/', (req, res) => {
+//     console.log(req.url, req.method);
+//     res.send(`
+//         <h1>Hey I am Shivendra Mahariya</h1>
+//         <a href="/user">Go to user</a>
+//     `);
+// });
+
+// const PORT = 5000;
+// app.listen(PORT, () => {
+//     console.log(`Server is running on http://localhost:${PORT}`);
+// });
+
+// const express = require("express");
 
 // const app = express();
 
-// app.use( "/", (req, res, next) => {
-//     console.log("this is a first request", req.url, req.method);
+// app.get("/", (req, res, next) => {
+//   console.log("req.url, req.method");
 
-// next();
-// });
-// app.use( "/", (req, res, next) => {
-//     console.log("this is a first request", req.url, req.method);
-//      res.send("are this a express ");
+//   res.send(`<h1> hey i am shivendra mahariya </h1>
+//         <a href="/user">user hai</a>`);
 
 // });
 
-// app.use("/aditya", (req, res, next) => {
-//     console.log("this is a first request", req.url, req.method);
-//      res.send("are this a express code");
+// app.get("/user", (req, res, next) => {
+//   console.log("req.url, req.method");
 
-// });
+//   res.send(`
+// <h1>Ragister a player name</h1>
 
-// app.use(bodyparser.urlencoded());
+// <form action="/user" method="post">
 
-// app.post("/home", (req, res, next) => {
-//     console.log("this is a first request", req.url, req.method);
-//      res.send("this is a shivendra home page");
+//     <input type="text" name="plyer name" placeholder="enter a plyer name">
 
+//     <input type="number" age=""
+//     placeholder="enter your age">
+// <input type="submit">
+// </form>`)
 // });
 
 // const PORT = 5000;
 
 // app.listen(PORT, () => {
-//     console.log(`server is runinng on  adress http://localhost:${PORT}`)
+//   console.log(`server is runinig on http://localhost:${PORT}`);
 // });
 
 const express = require("express");
@@ -61,7 +82,7 @@ app.post("/register", (req, res) => {
   console.log(" Form data aaya hai:", req.body);
 
   if (!username || !email || !password) {
-    return res.send(" Please fill all ");
+    return res.send(" Please fill all required fields!");
   }
 
   res.send(`
