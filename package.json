@@ -12,6 +12,7 @@
   "keywords": [],
   "dependencies": {
     "@types/node": "^24.6.2",
+    "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "i": "^0.3.7"
   }
