@@ -82,7 +82,7 @@ app.post("/register", (req, res) => {
   console.log(" Form data aaya hai:", req.body);
 
   if (!username || !email || !password) {
-    return res.send(" Please fill all required fields!");
+    return res.send(" Please fill all required ");
   }
 
   res.send(`
