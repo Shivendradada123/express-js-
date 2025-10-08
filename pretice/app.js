@@ -65,7 +65,7 @@ app.get("/user", (req, res, next) => {
 
 app.post("/user", (req, res, next) => {
   console.log(req.body);
-  res.send("<h1> plyer ragistration successsfully");
+  res.send("<h1> plyers ragistration successsfully");
 });
 
 const PORT = 5000;
@@ -78,13 +78,15 @@ app.listen(PORT, () => {
 
 
 
-let num = [1, 2 , 3, 4, 5];
+// let num = [1, 2 , 3, 4, 5];
 
-for (let number = 0; number < num.length; number++) {
-  if (num[number] > 5) {
-    console.log(num[number]);
-  }
-}
+// for (let number = 0; number< num.length; number++) {
+// if(num[number] > 5){
+//    console.log(num[number]);
+// }
+   
+//   }
+
 
 
 
